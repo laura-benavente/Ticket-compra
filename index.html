@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket de Compra</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Ticket de Compra</h1>
+    <table id="ticket-table">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio sin IVA</th>
+          <th>Tipo de IVA</th>
+          <th>Precio con IVA</th>
+        </tr>
+      </thead>
+      <tbody id="ticket-body">
+        <!-- Las líneas del ticket se añadirán aquí -->
+      </tbody>
+    </table>
+    <div class="totals">
+      <p>Total sin IVA: <span id="total-sin-iva">0.00</span> €</p>
+      <p>Total IVA: <span id="total-iva">0.00</span> €</p>
+      <p>Total con IVA: <span id="total-con-iva">0.00</span> €</p>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
